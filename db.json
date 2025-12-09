@@ -1,0 +1,25 @@
+{
+  "filmes": [],
+  "salas": [],
+  "sessoes": [],
+  "ingressos": [
+    {
+      "id": "6344",
+      "sessaoId": "ca30",
+      "tipo": "Meia",
+      "valor": 10
+    },
+    {
+      "id": "b532",
+      "sessaoId": "a34a",
+      "tipo": "Inteira",
+      "valor": 20
+    },
+    {
+      "id": "0128",
+      "sessaoId": "a34a",
+      "tipo": "Meia",
+      "valor": 10
+    }
+  ]
+}
