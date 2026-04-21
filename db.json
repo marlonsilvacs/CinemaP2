@@ -1,7 +1,41 @@
 {
-  "filmes": [],
-  "salas": [],
-  "sessoes": [],
+  "filmes": [
+    {
+      "id": "875e",
+      "titulo": "HOMEM-ARANHA UM NOVO DIA",
+      "sinopse": "Do lado de aliados inesperados e tentando acabar com adversários cada vez piores, o Homem-Aranha usa toda a sua força para manter a paz na cidade.",
+      "classificacao": "12",
+      "duracao": 140,
+      "genero": "Ação",
+      "dataEstreia": "2026-06-30",
+      "posterUrl": "https://static.wikia.nocookie.net/dublagem/images/e/ef/Homem-Aranha_-_Um_Novo_Dia_P%C3%B4ster.jpg/revision/latest/scale-to-width-down/1200?cb=20260414162536&path-prefix=pt-br"
+    },
+    {
+      "id": "dcee",
+      "titulo": "MICHAEL",
+      "sinopse": "Dirigido por Antoine Fuqua, o filme retrata a vida, carreira e legado do Rei do Pop, desde o Jackson 5 até seu auge solo. ",
+      "classificacao": "Livre",
+      "duracao": 160,
+      "genero": "Drama",
+      "dataEstreia": "2026-04-21",
+      "posterUrl": "https://istoe.com.br/wp-content/uploads/2025/11/MVN-Intl-Teaser-Digital1Sht-BR-pt-647x1024.jpg"
+    }
+  ],
+  "salas": [
+    {
+      "id": "a904",
+      "numero": 2,
+      "capacidade": 40
+    }
+  ],
+  "sessoes": [
+    {
+      "id": "b74b",
+      "filmeId": "dcee",
+      "salaId": "a904",
+      "dataHora": "2026-04-21T17:30"
+    }
+  ],
   "ingressos": [
     {
       "id": "6344",
@@ -20,6 +54,12 @@
       "sessaoId": "a34a",
       "tipo": "Meia",
       "valor": 10
+    },
+    {
+      "id": "8303",
+      "sessaoId": "b74b",
+      "tipo": "Inteira",
+      "valor": 20
     }
   ]
 }
