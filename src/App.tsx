@@ -5,22 +5,31 @@ import { Salas } from "./pages/Salas";
 import { Sessoes } from "./pages/Sessoes";
 import { Ingressos } from "./pages/Ingressos";
 import { Home } from "./pages/Home";
+import { Pipoca } from "./pages/Pipoca";
 import { Toaster } from "sonner";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <main className="container mt-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/filmes" element={<Filmes />} />
-          <Route path="/salas" element={<Salas />} />
-          <Route path="/sessoes" element={<Sessoes />} />
-          <Route path="/ingressos" element={<Ingressos />} />
-        </Routes>
-      </main>
-      <Toaster richColors />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/filmes" element={<Filmes />} />
+        <Route path="/salas" element={<Salas />} />
+        <Route path="/sessoes" element={<Sessoes />} />
+        <Route path="/ingressos" element={<Ingressos />} />
+        <Route path="/pipoca" element={<Pipoca />} />
+      </Routes>
+      <Toaster
+        richColors
+        toastOptions={{
+          style: {
+            background: "var(--cinema-panel)",
+            border: "1px solid var(--cinema-border)",
+            color: "var(--cinema-text)",
+          },
+        }}
+      />
     </BrowserRouter>
   );
 }

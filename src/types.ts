@@ -7,9 +7,20 @@ export const filmeSchema = z.object({
   duracao: z.number().min(1, "Duração deve ser maior que 0"),
   genero: z.string().min(1, "Gênero é obrigatório"),
   dataEstreia: z.string().min(1, "Data é obrigatória"),
+  posterUrl: z.string().url("URL inválida").optional().or(z.literal("")),
 });
 
 export type Filme = z.infer<typeof filmeSchema> & { id: string };
+
+export type PipocaItem = {
+  id: string;
+  nome: string;
+  preco: number;
+  emoji: string;
+  descricao: string;
+};
+
+export type CarrinhoItem = PipocaItem & { quantidade: number };
 
 export const salaSchema = z.object({
   numero: z.number().min(1, "Número da sala é obrigatório"),
